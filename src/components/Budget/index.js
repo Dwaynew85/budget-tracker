@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppContext } from '../context/AppContext';
+import { AppContext } from '../../context/AppContext';
 
 const Budget = () => {
 	const { budget } = React.useContext(AppContext);
