@@ -3,10 +3,10 @@ import React from 'react';
 const ViewBudget = ({ budget, handleEditClick }) => {
     return (
         <>
-            <span>Budget: ${budget}</span>
+            <span>Budget: ${budget}  </span>
             <button
                 type='button'
-                class='btn btn-primary'
+                class='btn btn-secondary btn-sm'
                 onClick={handleEditClick}
             >
                 Edit

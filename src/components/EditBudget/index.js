@@ -14,7 +14,7 @@ const EditBudget = ({ budget, handleSaveClick}) => {
             />
             <button
                 type='button'
-                class='btn btn-primary'
+                class='btn btn-secondary btn-sm'
                 onClick={() => handleSaveClick(value)}
             >
                 Save
