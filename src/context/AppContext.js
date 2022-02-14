@@ -1,4 +1,5 @@
 import React from 'react';
+import {v4 as uuidv4 } from 'uuid';
 
 const AppReducer = (state, action) => {
 	switch (action.type) {
@@ -19,19 +20,21 @@ const AppReducer = (state, action) => {
 				...state,
 				budget: action.payload,
 			}
-			
+
 		default:
 			return state;
 	}
 };
 
 const initialState = {
-    budget: 2000,
-    expenses: [
-        { id: 12, name: 'shopping', cost: 40 },
-        { id: 13, name: 'holiday', cost: 400 },
-        { id: 14, name: 'car service', cost: 50 },
-    ],
+	budget: 2000,
+	expenses: [
+		{ id: uuidv4(), name: 'Shopping', cost: 50 },
+		{ id: uuidv4(), name: 'Holiday', cost: 300 },
+		{ id: uuidv4(), name: 'Transportation', cost: 70 },
+		{ id: uuidv4(), name: 'Fuel', cost: 40 },
+		{ id: uuidv4(), name: 'Child Care', cost: 500 },
+	],
 };
 
 export const AppContext = React.createContext();
